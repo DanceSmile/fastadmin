@@ -1,0 +1,16 @@
+{
+    "name": "dancesmile/fastadmin",
+    "description": "This  is fast-admin",
+    "require-dev": {
+
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cailei",
+            "email": "cailei@aprbrother.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
