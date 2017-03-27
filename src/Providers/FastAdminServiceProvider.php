@@ -19,9 +19,9 @@ class FastAdminServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../resource/fast-admin' => public_path('fast-admin'),
-            __DIR__.'/../resource/components' => resource_path('fast-admin'),
-            __DIR__.'/../resource/layouts' => resource_path('fast-admin'),
-            __DIR__.'/../resource/admin' => resource_path('fast-admin')
+            __DIR__.'/../resource/components' => resource_path('views/components'),
+            __DIR__.'/../resource/layouts' => resource_path('views/layouts'),
+            __DIR__.'/../resource/admin' => resource_path('views/admin')
         ], 'resource');
 
         $this->publishes([
