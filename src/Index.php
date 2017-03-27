@@ -1,6 +1,7 @@
 <?php
+namespace DanceSmile\fastadmin;
 
-class   test{
+class   Index{
 
     public function __construct()
     {
