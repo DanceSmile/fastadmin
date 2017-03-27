@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "DanceSmile\\fastadmin": "src/"
+            "DanceSmile\\fastadmin\\": "src/"
         }
     },
     "minimum-stability": "dev",
