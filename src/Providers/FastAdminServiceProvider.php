@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace FastAdmin\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,9 @@ class FastAdminServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'../config/admin.php' => config_path('admin.php'),
+        ]);
     }
 
     /**
