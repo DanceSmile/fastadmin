@@ -11,6 +11,11 @@
             "email": "cailei@aprbrother.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "DanceSmile\\fastadmin": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
