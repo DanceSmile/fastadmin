@@ -28,10 +28,7 @@ class FastAdminServiceProvider extends ServiceProvider
 //            __DIR__.'/../database/migrations/' => database_path('migrations')
         ], 'migrations');
 
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
-
-
-
+        $this->loadRoutesFrom(__DIR__.'/../route/routes.php');
 
     }
 
