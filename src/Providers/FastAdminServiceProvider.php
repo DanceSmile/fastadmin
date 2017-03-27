@@ -3,6 +3,7 @@
 namespace FastAdmin\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use FastAdmin\Commands\CreateSeries;
 
 class FastAdminServiceProvider extends ServiceProvider
 {
@@ -13,6 +14,13 @@ class FastAdminServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                CreateSeries::class,
+            ]);
+        }
+
         $this->publishes([
             __DIR__.'/../config/admin.php' => config_path('admin.php')
         ], 'config');
