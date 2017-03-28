@@ -41,6 +41,7 @@ class CreateSeries extends Command
     {
         $name = ucfirst($this->argument("name"));
 
+
         $this->isDir();
 
         $controller = "Admin/".$name."Controller";
@@ -49,9 +50,12 @@ class CreateSeries extends Command
 
         $directory = strtolower($name);
 
+
+
         $this->call("make:model",[
             "name"=> $model
         ]);
+
 
         file_put_contents(app_path("Http/Controllers/{$controller}.php"),
         str_replace(
@@ -75,5 +79,6 @@ class CreateSeries extends Command
         if( !is_dir(app_path("Http/Controllers/Admin"))){
             mkdir(app_path("Http/Controllers/Admin"),0755,true);
         }
+
     }
 }
