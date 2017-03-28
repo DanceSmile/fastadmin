@@ -5,6 +5,7 @@ namespace FastAdmin\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
+
 class CreateSeries extends Command
 {
     /**
@@ -45,9 +46,11 @@ class CreateSeries extends Command
         $directory = strtolower($name);
 
 
+
         $this->call("make:model",[
             "name"=> $model
         ]);
+
 
 
 
@@ -61,6 +64,13 @@ class CreateSeries extends Command
 
 
         File::copyDirectory(__DIR__.'/../resource/user', resource_path("views/admin/{$directory}"), $options = null);
+
+
+        $this->call("make:model",[
+            "name"=> $model
+        ]);
+
+
 
     }
 }
