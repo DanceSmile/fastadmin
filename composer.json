@@ -1,0 +1,27 @@
+{
+    "name": "dancesmile/fastadmin",
+    "description": "laravel后台快速开发",
+    "require-dev": {
+
+    },
+    "keywords": [
+        "admin",
+        "laravel admin",
+        "后台",
+        "快速开发"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cailei",
+            "email": "1215850394@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FastAdmin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
